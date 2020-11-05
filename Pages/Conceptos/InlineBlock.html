@@ -35,7 +35,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="../Conceptos/PropiedadDisplay.html">Propiedad display</a>
-                        <a class="dropdown-item" href="../Conceptos/InlineBlock.html">inline-block</a>
+                        <a class="dropdown-item" href="../Conceptos/InlineBlock.html">block, inline e inline-block</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -72,23 +72,10 @@
         </div>
         <div class="container">
 
-            <!-- div {border-style: solid;}
-            div div {border-style: dashed; border-color: green; margin: 5px;}
-            div div div {border-style: dashed; border-color: red; margin: 5px;}
-            h1 {border-style: dashed; border-color: green;}
-            h2 {border-style: dashed; border-color: red; }
-            li {border-style: dotted; border-width:thin; border-color:brown; margin: 3px;} -->
-
-            &lt;div style="background: black; padding: 5px;"> &lt;h1 style="display: block; border: 4px dotted #fff; color:#fff">Elemento de bloque</h1>
-            &lt;/div>
-
-            <div style="background: black; padding: 5px;">
-                <h1 style="display: block; border: 4px dotted #fff; color:#fff">Elemento de bloque</h1>
-            </div>
-            <section id="SectionInline">
+            <section id="SectionBLock">
                 <div class="row">
                     <div class="col-md-4 mb-4">
-                        <h3>Usos del valor block</h3>
+                        <h3>Uso del valor block</h3>
                     </div>
                     <div class="col-md-4 mb-4">
                         <h3>Ejemplo</h3>
@@ -97,121 +84,124 @@
                         <h3>Resultado</h3>
                     </div>
                     <div class="col-md-4">
-                        <p>El elemento genera un cuadro de elemento de bloque y ocoupa todo el espaso posible.</p>
+                        <p>El elemento genera un cuadro de elemento de bloque y ocupa todo el espasio posible.</p>
                         <p>La forma de usarlo es: <span class="text-danger SizeFuente">propiedad</span> <span class="text-primary SizeFuente">valor</span></p>
                         <p><span class="text-danger SizeFuente">display:</span> <span class="text-primary SizeFuente">block</span></p>
                     </div>
                     <div class="col-md-4">
-                        <ul>
-                            <li>inline-table</li>
-                            <li>list-item</li>
-                            <li>none</li>
-                            <li>rever</li>
-                            <li>table</li>
-                            <li>table-caption</li>
-                            <li>table-cell</li>
-                            <li>table-column</li>
-                        </ul>
+                        <div class="DivSeparador SizeFuente">
+                            <p>
+                                <span class="text-primary">&lt;div </span>style="background: black; padding: 5px;"<span class="text-primary">></span>
+                            </p>
+                            <p class="TextEjemplo">
+                                <span class="text-primary">&lt;h2 style="</span>
+                                <span class="text-danger">display: block;</span> border: 4px dotted #fff; color:#fff">Elemento de bloque 1
+                                <span class="text-primary">&lt;/h2></span>
+                                <span class="text-primary">&lt;h2 style="</span>
+                                <span class="text-danger">display: block;</span> border: 4px dotted #fff; color:#fff">Elemento de bloque 2
+                                <span class="text-primary">&lt;/h2></span>
+                            </p>
+                            <p>
+                                <span class="text-primary">&lt;/div></span>
+                            </p>
+                        </div>
                     </div>
                     <div class="col-md-4">
-                        <ul>
-                            <li>table-column-group</li>
-                            <li>table-footer-group</li>
-                            <li>table-header-group</li>
-                            <li>table-row</li>
-                            <li>table-row-group</li>
-                            <li>unset</li>
-                            <li>--webkit-box</li>
-                            <li>--webkit-inline-box</li>
-                        </ul>
+                        <div style="background: black; padding: 5px;">
+                            <h2 style="display: block; border: 4px dotted #fff; color:#fff">Elemento de bloque 1</h2>
+                            <h2 style="display: block; border: 4px dotted #fff; color:#fff">Elemento de bloque 2</h2>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section id="SectionBlock">
+            <section id="SectionInline">
                 <div class="row">
-                    <div class="col-md-12 mb-4">
-                        <h3>Valor block</h3>
+                    <div class="col-md-4 mb-4">
+                        <h3>Uso del valor inline</h3>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h3>Ejemplo</h3>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h3>Resultado</h3>
                     </div>
                     <div class="col-md-4">
-                        <ul>
-                            <li>block</li>
-                            <li>contents</li>
-                            <li>flex</li>
-                            <li>flow-root</li>
-                            <li>grid</li>
-                            <li>inherit</li>
-                            <li>inline-block</li>
-                            <li>inline.flex</li>
-                            <li>inline-grid</li>
-                        </ul>
+                        <p>El elemento genera uno o más cuadros de elemento en línea y ocupa el espacio que el elemento necesita.</p>
+                        <p>La forma de usarlo es: <span class="text-danger SizeFuente">propiedad</span> <span class="text-primary SizeFuente">valor</span></p>
+                        <p><span class="text-danger SizeFuente">display:</span> <span class="text-primary SizeFuente">inline</span></p>
                     </div>
                     <div class="col-md-4">
-                        <ul>
-                            <li>inline-table</li>
-                            <li>list-item</li>
-                            <li>none</li>
-                            <li>rever</li>
-                            <li>table</li>
-                            <li>table-caption</li>
-                            <li>table-cell</li>
-                            <li>table-column</li>
-                        </ul>
+                        <div class="DivSeparador SizeFuente">
+                            <p>
+                                <span class="text-primary">&lt;div </span>style="background: black; padding: 5px;"<span class="text-primary">></span>
+                            </p>
+                            <p class="TextEjemplo">
+                                <span class="text-primary">&lt;h2 style="</span>
+                                <span class="text-danger">display: inline;</span> border: 4px dotted #fff; color:#fff">elemento 1
+                                <span class="text-primary">&lt;/h2></span>
+                                <span class="text-primary">&lt;h2 style="</span>
+                                <span class="text-danger">display: inline;</span> border: 4px dotted #fff; color:#fff">elemento 2
+                                <span class="text-primary">&lt;/h2></span>
+                                <span class="text-primary">&lt;h2 style="</span>
+                                <span class="text-danger">display: inline;</span> border: 4px dotted #fff; color:#fff">elemento 3
+                                <span class="text-primary">&lt;/h2></span>
+                            </p>
+                            <p>
+                                <span class="text-primary">&lt;/div></span>
+                            </p>
+                        </div>
                     </div>
                     <div class="col-md-4">
-                        <ul>
-                            <li>table-column-group</li>
-                            <li>table-footer-group</li>
-                            <li>table-header-group</li>
-                            <li>table-row</li>
-                            <li>table-row-group</li>
-                            <li>unset</li>
-                            <li>--webkit-box</li>
-                            <li>--webkit-inline-box</li>
-                        </ul>
+                        <div style="background: black; padding: 5px;">
+                            <h2 style="display: inline; border: 4px dotted #fff; color:#fff">elemento 1</h2>
+                            <h2 style="display: inline; border: 4px dotted #fff; color:#fff">elemento 2</h2>
+                            <h2 style="display: inline; border: 4px dotted #fff; color:#fff">elemento 3</h2>
+                        </div>
                     </div>
                 </div>
             </section>
             <section id="SectionInlineBlock">
                 <div class="row">
-                    <div class="col-md-12 mb-4">
-                        <h3>Valor inline-block</h3>
+                    <div class="col-md-4 mb-4">
+                        <h3>Uso del valor inline-block</h3>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h3>Ejemplo</h3>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h3>Resultado</h3>
                     </div>
                     <div class="col-md-4">
-                        <ul>
-                            <li>block</li>
-                            <li>contents</li>
-                            <li>flex</li>
-                            <li>flow-root</li>
-                            <li>grid</li>
-                            <li>inherit</li>
-                            <li>inline-block</li>
-                            <li>inline.flex</li>
-                            <li>inline-grid</li>
-                        </ul>
+                        <p>es una combinación entre los dos valores anteriores, crea cajas que son de bloque y en línea de forma simultánea,Una caja de tipo inline-block se comporta como si fuera de bloque, pero respecto a los elementos que la rodean es
+                            una caja en línea.</p>
+                        <p>La forma de usarlo es: <span class="text-danger SizeFuente">propiedad</span> <span class="text-primary SizeFuente">valor</span></p>
+                        <p><span class="text-danger SizeFuente">display:</span> <span class="text-primary SizeFuente">inline-block</span></p>
                     </div>
                     <div class="col-md-4">
-                        <ul>
-                            <li>inline-table</li>
-                            <li>list-item</li>
-                            <li>none</li>
-                            <li>rever</li>
-                            <li>table</li>
-                            <li>table-caption</li>
-                            <li>table-cell</li>
-                            <li>table-column</li>
-                        </ul>
+                        <div class="DivSeparador SizeFuente">
+                            <p>
+                                <span class="text-primary">&lt;div </span>style="background: black; padding: 5px;"<span class="text-primary">></span>
+                            </p>
+                            <p class="TextEjemplo">
+                                <span class="text-primary">&lt;p </span>style="color:#fff;"<span class="text-primary">></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore quibusdam qui vero?
+                                <span class="text-primary">&lt;span style="</span>
+                                <span class="text-danger">width: 60%; display: inline-block;</span>border: 4px dotted blue; color:#fff"
+                                <span class="text-primary">></span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, est?
+                                <span class="text-primary">&lt;/span></span> Libero nobis obcaecati, culpa laboriosam ipsum magni!
+                                <span class="text-primary">&lt;/p></span>
+                            </p>
+                            <p>
+                                <span class="text-primary">&lt;/div></span>
+                            </p>
+                        </div>
                     </div>
                     <div class="col-md-4">
-                        <ul>
-                            <li>table-column-group</li>
-                            <li>table-footer-group</li>
-                            <li>table-header-group</li>
-                            <li>table-row</li>
-                            <li>table-row-group</li>
-                            <li>unset</li>
-                            <li>--webkit-box</li>
-                            <li>--webkit-inline-box</li>
-                        </ul>
+                        <div style="background: black; padding: 5px;">
+                            <p style="color:#fff">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore quibusdam qui vero?
+                                <span style="width: 60%; display: inline-block; border: 4px dotted blue; color:#fff">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, est?</span> Libero nobis obcaecati, culpa laboriosam ipsum magni!
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
