@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OVI HTML5 y CSS3</title>
+    <link href="../../Images/UnadLogo.jpg" rel="icon" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../../Style/Style.css">
+</head>
+
+<body class="Fuente_1">
+
+    <a class='flotante' href='#'><i class="fab fa-twitter"></i></a>
+
+    <nav class="navbar navbar-expand-lg navbar-light DegradadoAmarillo">
+        <a class="navbar-brand" href="../../index.html">
+            <img id="ImgLogo" src="../../Images/logoUNADBlanco.png" alt="Logo UNAD" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../../index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Conceptos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../Conceptos/PropiedadDisplay.html">Propiedad display</a>
+                        <a class="dropdown-item" href="../Conceptos/InlineBlock.html">inline-block</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Pagina 1</a>
+                        <a class="dropdown-item" href="#">Pagina 2</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Autoevaluación
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Pagina 1</a>
+                        <a class="dropdown-item" href="#">Pagina 2</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Autor/Autor.html">Autor</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">Valor block, inline e inline-block</h1>
+                <p>Todos los elementos tienen un valor display predeterminado según el tipo de elemento, el valor predeterminado para la mayoría de los elementos suele ser block o inline</p>
+            </div>
+        </div>
+        <div class="container">
+
+            <!-- div {border-style: solid;}
+            div div {border-style: dashed; border-color: green; margin: 5px;}
+            div div div {border-style: dashed; border-color: red; margin: 5px;}
+            h1 {border-style: dashed; border-color: green;}
+            h2 {border-style: dashed; border-color: red; }
+            li {border-style: dotted; border-width:thin; border-color:brown; margin: 3px;} -->
+
+            &lt;div style="background: black; padding: 5px;"> &lt;h1 style="display: block; border: 4px dotted #fff; color:#fff">Elemento de bloque</h1>
+            &lt;/div>
+
+            <div style="background: black; padding: 5px;">
+                <h1 style="display: block; border: 4px dotted #fff; color:#fff">Elemento de bloque</h1>
+            </div>
+            <section id="SectionInline">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <h3>Usos del valor block</h3>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h3>Ejemplo</h3>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h3>Resultado</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <p>El elemento genera un cuadro de elemento de bloque y ocoupa todo el espaso posible.</p>
+                        <p>La forma de usarlo es: <span class="text-danger SizeFuente">propiedad</span> <span class="text-primary SizeFuente">valor</span></p>
+                        <p><span class="text-danger SizeFuente">display:</span> <span class="text-primary SizeFuente">block</span></p>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>inline-table</li>
+                            <li>list-item</li>
+                            <li>none</li>
+                            <li>rever</li>
+                            <li>table</li>
+                            <li>table-caption</li>
+                            <li>table-cell</li>
+                            <li>table-column</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>table-column-group</li>
+                            <li>table-footer-group</li>
+                            <li>table-header-group</li>
+                            <li>table-row</li>
+                            <li>table-row-group</li>
+                            <li>unset</li>
+                            <li>--webkit-box</li>
+                            <li>--webkit-inline-box</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="SectionBlock">
+                <div class="row">
+                    <div class="col-md-12 mb-4">
+                        <h3>Valor block</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>block</li>
+                            <li>contents</li>
+                            <li>flex</li>
+                            <li>flow-root</li>
+                            <li>grid</li>
+                            <li>inherit</li>
+                            <li>inline-block</li>
+                            <li>inline.flex</li>
+                            <li>inline-grid</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>inline-table</li>
+                            <li>list-item</li>
+                            <li>none</li>
+                            <li>rever</li>
+                            <li>table</li>
+                            <li>table-caption</li>
+                            <li>table-cell</li>
+                            <li>table-column</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>table-column-group</li>
+                            <li>table-footer-group</li>
+                            <li>table-header-group</li>
+                            <li>table-row</li>
+                            <li>table-row-group</li>
+                            <li>unset</li>
+                            <li>--webkit-box</li>
+                            <li>--webkit-inline-box</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="SectionInlineBlock">
+                <div class="row">
+                    <div class="col-md-12 mb-4">
+                        <h3>Valor inline-block</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>block</li>
+                            <li>contents</li>
+                            <li>flex</li>
+                            <li>flow-root</li>
+                            <li>grid</li>
+                            <li>inherit</li>
+                            <li>inline-block</li>
+                            <li>inline.flex</li>
+                            <li>inline-grid</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>inline-table</li>
+                            <li>list-item</li>
+                            <li>none</li>
+                            <li>rever</li>
+                            <li>table</li>
+                            <li>table-caption</li>
+                            <li>table-cell</li>
+                            <li>table-column</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>table-column-group</li>
+                            <li>table-footer-group</li>
+                            <li>table-header-group</li>
+                            <li>table-row</li>
+                            <li>table-row-group</li>
+                            <li>unset</li>
+                            <li>--webkit-box</li>
+                            <li>--webkit-inline-box</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <hr>
+
+        </div>
+    </main>
+
+    <footer class="container">
+        <p>&copy; Copy right 2020</p>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+
+</html>

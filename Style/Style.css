@@ -17,6 +17,10 @@
     font-size: 1.4rem;
 }
 
+.SizeFuente {
+    font-size: 18px;
+}
+
 .DegradadoAmarillo {
     background: var(--Amarillo);
     background: -moz-linear-gradient(left, var(--Amarillo) 0%, var(--Amarillo) 38%, var(--Naranja) 70%, var(--Naranja) 99%, var(--Naranja) 100%);
@@ -36,59 +40,45 @@ nav a.navbar-brand {
     height: 100px;
 }
 
-.social {
+.flotante {
+    display: flex;
     position: fixed;
-    /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
-    left: 0;
-    /* Establecemos la barra en la izquierda */
-    top: 200px;
-    /* Bajamos la barra 200px de arriba a abajo */
-    z-index: 2000;
-    /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
-}
-
-.social ul {
-    list-style: none;
-}
-
-.social ul li a {
-    display: inline-block;
+    bottom: 100px;
+    right: 20px;
+    background: #007bff;
     color: #fff;
-    background: #000;
-    padding: 10px 15px;
-    text-decoration: none;
-    -webkit-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
-    /* Establecemos una transición a todas las propiedades */
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.social ul li .icon-facebook {
-    background: #3b5998;
+.botones {
+    border: none;
+    background-color: var( --Azul);
+    color: #fff;
+    border-radius: 16px;
 }
 
-
-/* Establecemos los colores de cada red social, aprovechando su class */
-
-.social ul li .icon-twitter {
-    background: #00abf0;
+.botones:hover,
+.botones:focus,
+.botones:active {
+    background-color: var( --Naranja);
+    border-color: var( --Naranja);
+    box-shadow: 0 0 0 0.2rem rgb(244 121 32 / 60%);
 }
 
-.social ul li .icon-googleplus {
-    background: #d95232;
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: var( --Naranja)!important;
+    border-color: var( --Naranja)!important;
 }
 
-.social ul li .icon-pinterest {
-    background: #ae181f;
-}
-
-.social ul li .icon-mail {
-    background: #666666;
-}
-
-.social ul li a:hover {
-    background: #000;
-    /* Cambiamos el fondo cuando el usuario pase el mouse */
-    padding: 10px 30px;
-    /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+.jumbotron {
+    background: #fff;
+    border-radius: 0;
+    padding: 1rem 2rem 0 2rem;
 }
