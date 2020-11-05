@@ -110,3 +110,11 @@ section {
     width: 400px;
     margin: 10% auto;
 }
+
+.CitaAPA {
+    font-style: italic;
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
