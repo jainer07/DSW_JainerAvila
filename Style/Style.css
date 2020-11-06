@@ -118,3 +118,12 @@ section {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
+.ContenidoAutor {
+    margin-top: 20px;
+}
+
+#ImgFoto {
+    width: 250px;
+    height: auto;
+}
