@@ -77,6 +77,15 @@ nav a.navbar-brand {
     border-color: var( --Naranja)!important;
 }
 
+.minh-100 {
+    height: 100vh;
+}
+
+.Test {
+    height: 500px;
+    width: 100%;
+}
+
 .jumbotron {
     background: #fff;
     border-radius: 0;
