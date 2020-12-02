@@ -21,9 +21,21 @@
     font-size: 18px;
 }
 
-.DegradadoAmarillo {
+
+/* .DegradadoAmarillo {
     background: var(--Amarillo);
     background: linear-gradient(275deg, var(--Amarillo) 0%, var(--Naranja) 22%, var(--Amarillo) 100%);
+} */
+
+.DegradadoAmarillo {
+    background: var(--Amarillo);
+    background: -moz-linear-gradient(left, var(--Amarillo) 0%, var(--Amarillo) 38%, var(--Naranja) 70%, var(--Naranja) 99%, var(--Naranja) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, var(--Amarillo)), color-stop(38%, var(--Amarillo)), color-stop(70%, var(--Naranja)), color-stop(99%, var(--Naranja)), color-stop(100%, var(--Naranja)));
+    background: -webkit-linear-gradient(left, var(--Amarillo) 0%, var(--Amarillo) 38%, var(--Naranja) 70%, var(--Naranja) 99%, var(--Naranja) 100%);
+    background: -o-linear-gradient(left, var(--Amarillo) 0%, var(--Amarillo) 38%, var(--Naranja) 70%, var(--Naranja) 99%, var(--Naranja) 100%);
+    background: -ms-linear-gradient(left, var(--Amarillo) 0%, var(--Amarillo) 38%, var(--Naranja) 70%, var(--Naranja) 99%, var(--Naranja) 100%);
+    background: linear-gradient(to right, var(--Amarillo) 0%, var(--Amarillo) 38%, var(--Naranja) 70%, var(--Naranja) 99%, var(--Naranja) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f0b429', endColorstr='#f47920', GradientType=1);
 }
 
 nav a.navbar-brand {
